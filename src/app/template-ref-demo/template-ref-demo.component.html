@@ -1,0 +1,12 @@
+<div class="container">
+  <div class="row">
+    <div class="col-md-4">
+      <label class="form-label">Enter your Name :</label>
+      <input type="text" class="form-control" #name (keyup)="(1)" />
+      <button class="btn btn-primary" (click)="onSubmit(name)">Submit</button>
+    </div>
+  </div>
+  <div>
+    <h2>{{ name.value }}</h2>
+  </div>
+</div>

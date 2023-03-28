@@ -1,3 +1,20 @@
 <div>
-  <app-product></app-product>
+  <!-- <app-product></app-product> -->
+  <!-- <app-template-ref-demo></app-template-ref-demo> -->
+  <app-product-comp-ref #product></app-product-comp-ref>
 </div>
+<hr />
+<ul *ngIf="product.selectedProduct?.name != undefined">
+  <li>
+    {{ product.selectedProduct.name }}
+  </li>
+  <li>
+    {{ product.selectedProduct.color }}
+  </li>
+  <li>
+    {{ product.selectedProduct.price }}
+  </li>
+  <li>
+    {{ product.selectedProduct.inStock }}
+  </li>
+</ul>
