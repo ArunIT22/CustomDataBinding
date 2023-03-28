@@ -10,6 +10,8 @@ import { ProductCompRefComponent } from './product-comp-ref/product-comp-ref.com
 import { CustomerComponent } from './customer/customer.component';
 import { StopwatchChildComponent } from './stopwatch-child/stopwatch-child.component';
 import { StopwatchParentComponent } from './stopwatch-parent/stopwatch-parent.component';
+import { ChildProjectionComponent } from './child-projection/child-projection.component';
+import { ParentProjectionComponent } from './parent-projection/parent-projection.component';
 
 @NgModule({
   declarations: [
@@ -20,7 +22,9 @@ import { StopwatchParentComponent } from './stopwatch-parent/stopwatch-parent.co
     ProductCompRefComponent,
     CustomerComponent,
     StopwatchChildComponent,
-    StopwatchParentComponent
+    StopwatchParentComponent,
+    ChildProjectionComponent,
+    ParentProjectionComponent
   ],
   imports: [
     BrowserModule,
